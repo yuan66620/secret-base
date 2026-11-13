@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>secret base 下载</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(160deg, #0E1016 0%, #161233 55%, #241A4D 100%);
+    color: #E7E9F2;
+    display: flex;
+    justify-content: center;
+    padding: 28px 16px 48px;
+  }
+  .wrap { width: 100%; max-width: 420px; }
+  .brand { text-align: center; margin-bottom: 26px; }
+  .brand img { width: 76px; height: 76px; border-radius: 20px; box-shadow: 0 8px 32px rgba(90,95,240,.45); }
+  .brand h1 { font-size: 26px; letter-spacing: 4px; margin-top: 14px; }
+  .brand p { color: #A9AEC0; font-size: 13px; letter-spacing: 2px; margin-top: 6px; }
+  .card {
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.09);
+    border-radius: 18px;
+    padding: 18px;
+    margin-bottom: 16px;
+    backdrop-filter: blur(8px);
+  }
+  .card h2 { font-size: 16px; margin-bottom: 6px; }
+  .card .sub { color: #A9AEC0; font-size: 12.5px; line-height: 1.7; margin-bottom: 12px; }
+  .btn {
+    display: block; text-align: center; text-decoration: none;
+    padding: 13px 0; border-radius: 14px;
+    font-size: 15px; font-weight: 600; letter-spacing: 1px;
+    background: linear-gradient(90deg, #5568F0, #8A5CF0);
+    color: #fff;
+    margin-bottom: 10px;
+    transition: transform .12s ease;
+  }
+  .btn:active { transform: scale(.97); }
+  .btn.ghost {
+    background: rgba(255,255,255,.08);
+    color: #C9CDE0; font-weight: 500;
+  }
+  .size { color: #8E93A6; font-size: 11.5px; text-align: center; }
+  .steps { counter-reset: s; }
+  .steps li {
+    list-style: none; position: relative;
+    padding: 8px 0 8px 34px;
+    font-size: 13.5px; color: #C9CDE0; line-height: 1.7;
+  }
+  .steps li::before {
+    counter-increment: s; content: counter(s);
+    position: absolute; left: 0; top: 8px;
+    width: 22px; height: 22px; border-radius: 50%;
+    background: linear-gradient(135deg, #5568F0, #8A5CF0);
+    text-align: center; line-height: 22px; font-size: 12px; color: #fff;
+  }
+  .foot { text-align: center; color: #8E93A6; font-size: 11.5px; margin-top: 22px; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">
+    <img src="icon.png" alt="secret base">
+    <h1>secret base</h1>
+    <p>但愿你我只有彼此</p>
+  </div>
+
+  <div class="card">
+    <h2>📱 第一步：下载 App（两台手机都要装）</h2>
+    <div class="sub">secret base v1.7.5 · 一对一 · 端到端加密 · 聊后无痕</div>
+    <a class="btn" href="secret-base.apk" download>下载 secret base</a>
+    <div class="size">Android 安装包 · 约 16 MB</div>
+  </div>
+
+  <div class="card">
+    <h2>🌐 第二步：下载 EasyTier（两台手机都要装）</h2>
+    <div class="sub">免费组网工具，让两台手机在任意网络下直连（无需注册、无需付费）</div>
+    <a class="btn" href="easytier-arm64.apk" download>下载 EasyTier（推荐）</a>
+    <div class="size">适用于近几年的手机（arm64）· 约 30 MB</div>
+    <a class="btn ghost" href="easytier-arm.apk" download>下载 EasyTier（老手机 32 位版）</a>
+    <div class="size">仅 2016 年前的老手机需要 · 约 21 MB</div>
+  </div>
+
+  <div class="card">
+    <h2>🚀 使用方法</h2>
+    <ol class="steps">
+      <li>两台手机都装好 secret base 和 EasyTier</li>
+      <li>打开 EasyTier：一台「创建网络」，另一台扫码或输入配置加入，两台都打开开关直到「已连接」</li>
+      <li>打开 secret base：一方选「等待对方」，把 10.144 开头的地址和匹配码发给对方；另一方选「连入对方」填入</li>
+      <li>核对双方屏幕上的 6 位校验码一致，开始聊天</li>
+    </ol>
+  </div>
+
+  <div class="foot">端到端加密 · 零存储 · 聊后无痕</div>
+</div>
+</body>
+</html>
