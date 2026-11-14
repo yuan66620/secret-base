@@ -3,96 +3,69 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>secret base · 下载</title>
+<title>学习测试交流 · 试用下载</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
   body{
     font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
     min-height:100vh;
-    background:
-      radial-gradient(1200px 600px at 10% -10%, rgba(90,108,255,.22), transparent 60%),
-      radial-gradient(900px 500px at 110% 10%, rgba(138,92,240,.18), transparent 60%),
-      linear-gradient(165deg,#0B0D14 0%,#131733 55%,#1E1845 100%);
+    background:linear-gradient(165deg,#0B0D14 0%,#131733 55%,#1E1845 100%);
     color:#E9EBF5;
-    display:flex;justify-content:center;padding:40px 18px 60px;
+    display:flex;justify-content:center;padding:44px 18px 60px;
   }
-  .wrap{width:100%;max-width:430px}
-  .brand{text-align:center;margin-bottom:30px}
-  .brand .logo{
-    width:88px;height:88px;border-radius:24px;margin:0 auto;
-    box-shadow:0 18px 60px rgba(90,108,255,.45),inset 0 0 0 1px rgba(255,255,255,.08);
-    display:block
+  .wrap{width:100%;max-width:420px}
+  .head{text-align:center;margin-bottom:28px}
+  .logo{
+    width:84px;height:84px;border-radius:22px;margin:0 auto;display:block;
+    box-shadow:0 16px 46px rgba(90,108,255,.4);
   }
-  .brand h1{font-size:27px;letter-spacing:5px;margin-top:18px;font-weight:700}
-  .brand p{color:#9AA0B8;font-size:13px;letter-spacing:3px;margin-top:8px}
+  h1{font-size:24px;letter-spacing:3px;margin-top:18px;font-weight:700}
+  .sub{color:#9AA0B8;font-size:13px;margin-top:8px;letter-spacing:1px}
   .card{
     background:rgba(255,255,255,.045);
     border:1px solid rgba(255,255,255,.09);
-    border-radius:20px;padding:20px;margin-bottom:16px;
-    backdrop-filter:blur(10px);
+    border-radius:18px;padding:20px;margin-bottom:16px;
   }
-  .card h2{font-size:15px;margin-bottom:6px;font-weight:600;letter-spacing:1px}
-  .sub{color:#9AA0B8;font-size:12.5px;line-height:1.8;margin-bottom:14px}
+  .card h2{font-size:14px;margin-bottom:10px;font-weight:600;letter-spacing:1px}
   .btn{
     display:block;text-align:center;text-decoration:none;
-    padding:15px 0;border-radius:15px;
+    padding:15px 0;border-radius:14px;
     font-size:16px;font-weight:700;letter-spacing:2px;color:#fff;
     background:linear-gradient(95deg,#5568F0,#8A5CF0);
     box-shadow:0 10px 30px rgba(90,108,255,.35);
-    transition:transform .12s ease,box-shadow .12s ease;
   }
-  .btn:active{transform:scale(.975);box-shadow:0 6px 18px rgba(90,108,255,.3)}
-  .meta{display:flex;justify-content:center;gap:14px;margin-top:12px;color:#7C82A0;font-size:11.5px}
-  .meta span{display:flex;align-items:center;gap:5px}
-  .dotline{display:inline-block;width:4px;height:4px;border-radius:50%;background:#5568F0}
-  .steps{counter-reset:s}
-  .steps li{
-    list-style:none;position:relative;padding:9px 0 9px 36px;
-    font-size:13.5px;color:#C7CBDD;line-height:1.8;
-  }
-  .steps li::before{
-    counter-increment:s;content:counter(s);
-    position:absolute;left:0;top:9px;width:23px;height:23px;border-radius:50%;
-    background:linear-gradient(135deg,#5568F0,#8A5CF0);
-    text-align:center;line-height:23px;font-size:12px;font-weight:700;color:#fff;
-  }
-  .foot{text-align:center;color:#6E7490;font-size:11.5px;margin-top:26px;letter-spacing:1px}
-  .badge{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:50px;
-    background:rgba(61,220,132,.12);border:1px solid rgba(61,220,132,.25);
-    color:#5FE09A;font-size:11px;margin-top:10px}
+  .btn:active{transform:scale(.975)}
+  .meta{text-align:center;color:#7C82A0;font-size:11.5px;margin-top:12px}
+  .tips{color:#C7CBDD;font-size:12.5px;line-height:2}
+  .tips li{list-style:none;padding-left:18px;position:relative}
+  .tips li::before{content:"·";position:absolute;left:6px;color:#5568F0}
+  .foot{text-align:center;color:#6E7490;font-size:11px;margin-top:24px;letter-spacing:1px}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="brand">
-    <img class="logo" src="icon.png" alt="secret base">
-    <h1>secret base</h1>
-    <p>但愿你我只有彼此</p>
-    <div class="badge">端到端加密 · 聊后无痕</div>
+  <div class="head">
+    <img class="logo" src="icon.png" alt="学习测试交流">
+    <h1>学习测试交流</h1>
+    <div class="sub">试用版 · 学习测试使用</div>
   </div>
 
   <div class="card">
-    <h2>下载安装</h2>
-    <div class="sub">最新版 v1.10.0 · Android 安装包 · 约 16 MB</div>
-    <a class="btn" href="secret-base.apk" download>下载 secret base</a>
-    <div class="meta">
-      <span><i class="dotline"></i>一对一</span>
-      <span><i class="dotline"></i>加密通信</span>
-      <span><i class="dotline"></i>不存记录</span>
-    </div>
+    <h2>下载安装包</h2>
+    <a class="btn" href="secret-base.apk" download>下载 APK</a>
+    <div class="meta">Android 安装包 · 约 18 MB · v1.13.4</div>
   </div>
 
   <div class="card">
-    <h2>使用方法</h2>
-    <ol class="steps">
-      <li>两台手机都安装 secret base</li>
-      <li>第一次打开时，允许「通知」和「后台运行」</li>
-      <li>输入同一个服务器地址和匹配码，点「一键连接」</li>
-      <li>核对双方屏幕上的 6 位校验码一致，即可开始聊天</li>
-    </ol>
+    <h2>说明</h2>
+    <ul class="tips">
+      <li>本软件仅供学习测试使用</li>
+      <li>安装时如提示来源未知，选择允许即可</li>
+      <li>首次打开请允许通知与后台运行权限</li>
+    </ul>
   </div>
 
-  <div class="foot">secret base · 只属于你们两个人的角落</div>
+  <div class="foot">仅供学习测试 · 请勿用于其他用途</div>
 </div>
 </body>
 </html>
